@@ -172,11 +172,16 @@ while start <= end:
 ```
 #### Step 2: Combine all code together (`Final code`)
 ```python
-start = int(input("Input start:"))
-end = int(input("Input end:"))
-total = 0
-while start <= end:
-    total = sum(total, start)
-    start += 1
-print("The sum of numbers between " + str(start) + " and " + str(end) + " is: " + str(total))
+def sum(n1, n2):
+    return n1 + n2
+def sumFromTo(start, end):
+    total = 0
+    while start <= end:
+        total = sum(total, start)
+        start += 1
+    return total
+    
+startNumber = int(input("Input start:"))
+endNumber = int(input("Input end:"))
+print("The sum of numbers between " + str(startNumber) + " and " + str(endNumber) + " is: " + str(sumFromTo(startNumber, endNumber)))
 ```
