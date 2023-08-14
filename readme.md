@@ -170,7 +170,27 @@ while start <= end:
     print(start)
     start += 1
 ```
-#### Step 2: Combine all code together (`Final code`)
+#### Step 2: Sum with variable
+```python
+start = int(input("Input start:"))
+end = int(input("Input end:"))
+total = 0
+while start <= end:
+    totoal += start
+    start += 1
+```
+#### Step 3: Sum with sum function
+```python
+def sum(n1, n2):
+    return n1 + n2
+start = int(input("Input start:"))
+end = int(input("Input end:"))
+total = 0
+while start <= end:
+    totoal = sum(total, start)
+    start += 1
+```
+#### Step 4: Combine all code together (`Final code`)
 ```python
 def sum(n1, n2):
     return n1 + n2
